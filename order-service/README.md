@@ -1,0 +1,70 @@
+POST
+req: localhost:8080/save
+{  
+      "idPedido":1,
+      "email":"",
+      "nomeCompleto":"",
+      "shippingAddress":"",
+      "descricaoItemPedido":"",
+      "quantidadedeItensPedido":0,
+      "precoUnitarioItem":0,
+      "totalPagamento":0,
+      "formaPagamento":"",
+      "dataPedido":"22/03/2018",
+      "statusPedido":"",
+      "idTransacao":"",
+      "numeroCartao":"",
+      "validadeCartao":"",
+      "bandeira":""
+}
+res:
+http://localhost:8080/findById/1
+
+GET
+req: http://localhost:8080/findById/1
+res:
+{  
+      "idPedido":1,
+      "email":"",
+      "nomeCompleto":"",
+      "shippingAddress":"",
+      "descricaoItemPedido":"",
+      "quantidadedeItensPedido":0,
+      "precoUnitarioItem":0,
+      "totalPagamento":0,
+      "formaPagamento":"",
+      "dataPedido":"22/03/2018",
+      "statusPedido":"",
+      "idTransacao":"",
+      "numeroCartao":"",
+      "validadeCartao":"",
+      "bandeira":""
+}
+
+PUT
+req: 
+{  
+      "idPedido":1,
+      "email":"felip@izidoro.com",
+      "nomeCompleto":"",
+      "shippingAddress":"",
+      "descricaoItemPedido":"",
+      "quantidadedeItensPedido":0,
+      "precoUnitarioItem":0,
+      "totalPagamento":0,
+      "formaPagamento":"",
+      "dataPedido":"22/03/2018",
+      "statusPedido":"",
+      "idTransacao":"",
+      "numeroCartao":"",
+      "validadeCartao":"",
+      "bandeira":""
+}
+res:
+http://localhost:8080/findById/1
+
+DEL
+req:
+localhost:8080/delete/1
+res:
+200
